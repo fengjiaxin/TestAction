@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <title>登录页面</title>
 </head>
+<!-- 由于是在jsp子目录先，所以要想访问该页面，首先url是http://localhost:8080/TestAction/jsp/login.html访问该html
+	其中../为上一层目录，在加上login,访问路径就是http://localhost:8080/TestAction/login,然后调用login这个servlet解析执行 -->
 <body>
 	<form action="../login" method="get">
  		<input type="submit" value="提交"> 
