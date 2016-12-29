@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>TestAction</display-name>
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>org.feng.servlet.HelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<!-- 这里的/不能省略，/代表的含义是工程根目录，所以下面应该访问http://localhost:8080/TestAction/hello才可以进入这个Servlet -->
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+</web-app>
